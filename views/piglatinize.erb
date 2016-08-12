@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+  <body>
+    <h1>Pig Latinizer!</h1>
+
+<h2>Original text: </h2>
+<%= @user_phrase %>
+<br>
+
+<% new_phrase = PigLatinizer.new %>
+
+<h2>Pig Latinized text: </h2>
+<%= new_phrase.to_pig_latin(@user_phrase)
+ %> 	
+
+   </body>
+</html>
